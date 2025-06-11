@@ -1,0 +1,17 @@
+<%- include("partials/header.ejs") %>
+<section class="fade-in-up">
+<div class="contact-container">
+  <h1>Contact Me</h1>
+  <p class="intro-text">I'd love to hear from you! Whether you have a question, want to collaborate, or just want to say hi — feel free to drop a message below or email me directly at 
+    <a href="mailto:shayaanakramojla4372@gmail.com">shayaanakramojla4372@gmail.com</a>.
+  </p>
+
+  <form class="contact-form" action="mailto:shayaanakramojla4372@gmail.com" method="POST" enctype="text/plain">
+    <input name="name" type="text" class="feedback-input" placeholder="Your Name" required />
+    <input name="email" type="email" class="feedback-input" placeholder="Your Email" required />
+    <textarea name="message" class="feedback-input" placeholder="Your Message" required></textarea>
+    <button type="submit" class="submit-btn">Send Message</button>
+  </form>
+</div>
+</section>
+<%- include("partials/footer.ejs") %>

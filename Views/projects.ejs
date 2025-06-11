@@ -1,0 +1,245 @@
+<%- include("partials/header.ejs") %>
+<section class="fade-in-up">
+<div class="projects-container">
+  <h1>My Projects</h1>
+  
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <div class="project-header">
+        <h2>Instagram Backend Clone</h2>
+        <span class="tech-tag cpp">C++</span>
+        <span class="tech-tag ds">Data Structures</span>
+      </div>
+      <div class="project-body">
+        <p>Built a backend system inspired by Instagram using C++ and efficient data structures including:</p>
+        <ul>
+          <li>AVL trees for user data organization</li>
+          <li>Hash maps for quick lookups</li>
+          <li>Linked lists for feed generation</li>
+        </ul>
+        <p>Implemented core features like user authentication, photo management, follow system, and real-time notifications.</p>
+      </div>
+      <div class="project-footer">
+        <span class="project-type">Backend System</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-header">
+        <h2>Amazon Website Clone</h2>
+        <span class="tech-tag html">HTML</span>
+        <span class="tech-tag css">CSS</span>
+        <span class="tech-tag js">JavaScript</span>
+      </div>
+      <div class="project-body">
+        <p>Developed a fully functional e-commerce clone with:</p>
+        <ul>
+          <li>Dynamic product listings with filters</li>
+          <li>Shopping cart with local storage</li>
+          <li>User authentication system</li>
+          <li>Fully responsive design</li>
+        </ul>
+      </div>
+      <div class="project-footer">
+        <span class="project-type">Web Application</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-header">
+        <h2>Movie Data Analyzer</h2>
+        <span class="tech-tag r">R</span>
+        <span class="tech-tag analysis">Data Analysis</span>
+      </div>
+      <div class="project-body">
+        <p>Conducted comprehensive movie dataset analysis including:</p>
+        <ul>
+          <li>Genre popularity trends</li>
+          <li>Rating distribution analysis</li>
+          <li>Box office performance correlations</li>
+          <li>Interactive visualizations</li>
+        </ul>
+      </div>
+      <div class="project-footer">
+        <span class="project-type">Data Science</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-header">
+        <h2>John Rambo Game</h2>
+        <span class="tech-tag cpp">C++</span>
+        <span class="tech-tag game">Game Dev</span>
+      </div>
+      <div class="project-body">
+        <p>2D action game featuring:</p>
+        <ul>
+          <li>Smooth player movement controls</li>
+          <li>Enemy AI with pathfinding</li>
+          <li>Scoring system with leaderboard</li>
+          <li>Multiple challenging levels</li>
+        </ul>
+      </div>
+      <div class="project-footer">
+        <span class="project-type">Game Development</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-header">
+        <h2>Interactive Web Projects</h2>
+        <span class="tech-tag html">HTML</span>
+        <span class="tech-tag css">CSS</span>
+        <span class="tech-tag js">JavaScript</span>
+      </div>
+      <div class="project-body">
+        <p>Collection of web-based projects including:</p>
+        <ul>
+          <li>Shopping cart applications</li>
+          <li>Browser games with Canvas API</li>
+          <li>Animated UI components</li>
+          <li>Responsive layouts</li>
+        </ul>
+      </div>
+      <div class="project-footer">
+        <span class="project-type">Web Development</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-header">
+        <h2>Ping Pong Game</h2>
+        <span class="tech-tag asm">Assembly</span>
+        <span class="tech-tag low-level">Low-Level</span>
+      </div>
+      <div class="project-body">
+        <p>Classic game implemented in Assembly language with:</p>
+        <ul>
+          <li>Precise paddle control</li>
+          <li>Ball physics simulation</li>
+          <li>Score tracking</li>
+          <li>Hardware-optimized performance</li>
+        </ul>
+      </div>
+      <div class="project-footer">
+        <span class="project-type">Low-Level Programming</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<%- include("partials/footer.ejs") %>
+
+<style>
+  .projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+    font-size: 2.5rem;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .project-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .project-header {
+    padding: 1.5rem 1.5rem 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .project-header h2 {
+    margin: 0 0 0.5rem 0;
+    color: #3498db;
+    font-size: 1.3rem;
+  }
+
+  .tech-tag {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .tech-tag.cpp { background: #5D8BF4; color: white; }
+  .tech-tag.ds { background: #2DCDDF; color: white; }
+  .tech-tag.html { background: #E44D26; color: white; }
+  .tech-tag.css { background: #264DE4; color: white; }
+  .tech-tag.js { background: #F0DB4F; color: #323330; }
+  .tech-tag.r { background: #276DC3; color: white; }
+  .tech-tag.analysis { background: #8E44AD; color: white; }
+  .tech-tag.game { background: #E74C3C; color: white; }
+  .tech-tag.asm { background: #6E4C13; color: white; }
+  .tech-tag.low-level { background: #34495E; color: white; }
+
+  .project-body {
+    padding: 1.5rem;
+    flex-grow: 1;
+  }
+
+  .project-body p {
+    margin-top: 0;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  .project-body ul {
+    padding-left: 1.5rem;
+    margin: 0.5rem 0;
+  }
+
+  .project-body li {
+    margin-bottom: 0.3rem;
+    color: #555;
+    line-height: 1.5;
+  }
+
+  .project-footer {
+    padding: 1rem 1.5rem;
+    background: #f8f9fa;
+    border-top: 1px solid #eee;
+  }
+
+  .project-type {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #7f8c8d;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  @media (max-width: 768px) {
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

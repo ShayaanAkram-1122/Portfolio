@@ -34,7 +34,7 @@ This is a personal portfolio website built using **Node.js**, **Express**, and *
 │   ├── projects.ejs
 │   ├── skills.ejs
 │   └── contact.ejs
-├── app.js
+├── index.js
 ├── package.json
 └── README.md
 ```

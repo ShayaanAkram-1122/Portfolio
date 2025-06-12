@@ -58,7 +58,7 @@ This is a personal portfolio website built using **Node.js**, **Express**, and *
 3. **Run the server**
 
    ```bash
-   node app.js
+   node index.js
    ```
 
 4. **Visit in browser**
